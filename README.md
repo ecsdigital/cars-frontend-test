@@ -1,4 +1,4 @@
-# React 'cars' test
+# React Cars Test
 
 Please create a new git repo (don't fork this one) and follow the instructions below.
 
@@ -8,7 +8,7 @@ It is expected that you will spend 2-3 hours on the test.
 
 ## The Epic
 
-"As a User, I would like to be able to add, retrieve, update and remove cars to an existing RESTFul API."
+"As a User, I would like a UI to be able to add, retrieve, update and remove cars to an existing RESTFul API."
 
 ## Stories
 
@@ -23,22 +23,22 @@ This epic has been divided into stories ordered by priority (lowest to highest):
 
 ## The API Docs
 
-NOTE: If the API is down/not working properly for whatever, please email us to let us know but **don't let it block you**.
-Stub out your API request with fake responses using `setTimeout` or `Promise.resolve`.
+NOTE: If the API is down/not working properly for whatever reason, please email us to let us know, but **don't let it block you**.
+Stub out your API request with fake responses using an appropriate asyncronous stub (`setTimeout` or `Promise.resolve` etc).
 
-The RESTFul API endpoint you need communicate with (using JSON) to store your cars is: 
+The RESTFul API endpoint you need to communicate with (using JSON) to store your cars is: 
 
 https://cars-test-service.now.sh/api/car
 
 Note: There is no backend validation to consider/rely on.
 
-Available requests:
+Available requests (all JSON):
 
-1. `POST /api/car` - creates a car from the JSON request body (see fields below)
+1. `POST /api/car` - creates a car from the request body (see fields below)
 1. `GET /api/car` - gets a list of all cars
-1. `GET /api/car/\[CAR_ID]` - gets an individual car
-1. `DELETE /api/car/\[CAR_ID]` - deletes an individual car
-1. `UPDATE /api/car/\[CAR_ID]` - updates a car from the JSON request body
+1. `GET /api/car/[CAR_ID]` - gets an individual car
+1. `DELETE /api/car/[CAR_ID]` - deletes an individual car
+1. `UPDATE /api/car/[CAR_ID]` - updates a car from the JSON request body
 
 The fields for a 'car' should be:
 
@@ -55,7 +55,7 @@ On each request to the API you will need to send authentication in the header:
 
 `authorization: Bearer yournameinlowercase.supersecretecstoken`
 
-NOTE: Please replace "yournameinlowercase" with your name but leave `.supersecretecstoken` as it is..
+NOTE: Please replace "yournameinlowercase" with your name but leave `.supersecretecstoken` as it is.
 
 A cURL example:
 
@@ -66,16 +66,16 @@ A cURL example:
 These are stretch goals if you have time (you can do them in any order):
 
 1. Use redux (and optionally sagas) to manage state.
+1. Apply styling to your components (we are interested how you tackle this rather than how it looks).
 1. Handle user validation (e.g. string length or data-type checks)
 1. More tests! (e2e? cypress?)
 1. Apply sorting to the list of cars
 1. Apply filtering to the list of cars
-1. Apply styling to your components (we are interested how you tackle this rather than how it looks).
 1. Host you application on some free hosting (e.g. https://zeit.co/)
 
 ### Testing
 
-All features should be covered by some tests; what kind of test is up to you, and they don't need to be extensive (we just need an idea of your general approach to testing a react application).
+All features should be covered by some tests; what kind of test is up to you. They don't need to be extensive (we just need an idea of your general approach to testing a react application).
 
 ## Limitations
 
