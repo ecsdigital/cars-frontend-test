@@ -2,9 +2,7 @@
 
 Please create a new git repo (don't fork this one) and follow the instructions below.
 
-Once you have finished, please email us the URL to your repo.
-
-Please make commits as you go (> 1 and < 100) and provide instructions to run the application.
+Once you have finished, please email us the URL to your repo and provide instructions to run the application.
 
 It is expected that you will spend 2-3 hours on the test. 
 
@@ -24,6 +22,9 @@ This epic has been divided into stories ordered by priority (lowest to highest):
 *Note:* This isn't a test of your design skills.
 
 ## The API Docs
+
+NOTE: If the API is down/not working properly for whatever, please email us to let us know but **don't let it block you**.
+Stub out your API request with fake responses using `setTimeout` or `Promise.resolve`.
 
 The RESTFul API endpoint you need communicate with (using JSON) to store your cars is: 
 
